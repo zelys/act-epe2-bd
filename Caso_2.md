@@ -102,7 +102,7 @@ ORDER BY e.s_base ASC;
 b) Crear una consulta que permita contabilizar el total de empleados por banco.
 
 ```sql
-SELECT (b.nom_b) AS banco, COUNT(*) AS cantidad_empleados
+SELECT b.nom_b AS banco, COUNT(*) AS cantidad_empleados
 FROM banco b
 JOIN sucursal s ON b.cod_b = s.cod_b
 JOIN empleado e ON s.cod_s = e.cod_s
