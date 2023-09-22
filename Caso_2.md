@@ -112,7 +112,7 @@ GROUP BY e.cod_s;
 #### 3. Finalmente se necesita que, pueda determinar mediante SQL el promedio de sueldo de los empleados del banco CHASE.
 
 ```sql
-SELECT (b.nom_b) AS banco, ROUND(AVG(e.s_base),0) AS Promedio
+SELECT b.nom_b AS banco, ROUND(AVG(e.s_base),0) AS Promedio
 FROM banco b
 JOIN sucursal s ON b.cod_b = s.cod_b
 JOIN empleado e ON s.cod_s = e.cod_s
