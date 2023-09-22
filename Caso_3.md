@@ -64,33 +64,29 @@ CREATE TABLE contrato(
 ### Insertar datos en MySQL.
 
 ```sql
--- tabla equipo
 INSERT INTO equipo (cod_equipo, nom_equipo, fecha_fund)
 VALUES
-  ('EQ1', 'Universidad Católica', '1940-01-01'),
-  ('EQ2', 'Unión Española ', '1942-03-15'),
-  ('EQ3', 'Universidad de Chile', '1940-07-20'),
-  ('EQ4', 'Colo-Colo', '1945-09-10'),
-  ('EQ5', 'Santiago Morning', '1948-12-05');
+('EQ1', 'Universidad Católica', '1940-01-01'),
+('EQ2', 'Unión Española ', '1942-03-15'),
+('EQ3', 'Universidad de Chile', '1940-07-20'),
+('EQ4', 'Colo-Colo', '1945-09-10'),
+('EQ5', 'Santiago Morning', '1948-12-05');
 
--- tabla jugador
 INSERT INTO jugador (cod_jugador, nom_jugador, genero, fecha_nacimiento)
 VALUES
-  ('J1', 'Andres Gonzalez', 1, '1990-04-15'),
-  ('J2', 'Carolina Cabello', 2, '1995-06-20'),
-  ('J3', 'Flavia Paredes', 2, '2000-08-25'),
-  ('J4', 'Pablo Muñoz', 1, '2005-10-30'),
-  ('J5', 'Felipe Martínez', 1, '2010-12-10');
+('J1', 'Andres Gonzalez', 1, '1990-04-15'),
+('J2', 'Carolina Cabello', 2, '1995-06-20'),
+('J3', 'Flavia Paredes', 2, '2000-08-25'),
+('J4', 'Pablo Muñoz', 1, '2005-10-30'),
+('J5', 'Felipe Martínez', 1, '2010-12-10');
 
--- tabla contrato
 INSERT INTO contrato (fecha_inicio, fecha_term, sueldo_base, cod_equipo, cod_jugador)
 VALUES
-  ('2023-01-01', '2024-12-31', 2000000, 'EQ1', 'J1'),
-  ('2023-03-01', '2024-11-30', 3000000, 'EQ2', 'J5'),
-  ('2023-04-01', '2024-10-31', 4000000, 'EQ2', 'J4'),
-  ('2023-06-01', '2024-09-30', 3000000, 'EQ5', 'J2'),
-  ('2023-09-01', '2024-08-31', 2000000, 'EQ5', 'J3');
-
+('2023-01-01', '2024-12-31', 2000000, 'EQ1', 'J1'),
+('2023-03-01', '2024-11-30', 3000000, 'EQ2', 'J5'),
+('2023-04-01', '2024-10-31', 4000000, 'EQ2', 'J4'),
+('2023-06-01', '2024-09-30', 3000000, 'EQ5', 'J2'),
+('2023-09-01', '2024-08-31', 2000000, 'EQ5', 'J3');
 ```
 
 #### 2. Se necesita listar el nombre de todos los equipos y el nombre de los jugadores de genero femenino que han sido contratados durante el presente año (Referencia fecha inicio año 2023).
