@@ -33,7 +33,7 @@ El siguiente es un esquema resumido de parte de la información y datos que se m
 ```sql
 CREATE DATABASE IF NOT EXISTS bd_tienda_retail;
 
-USE bd_tienda;
+USE bd_tienda_retail;
 
 CREATE TABLE clientes(
   rut_cli CHAR(10) PRIMARY KEY,
