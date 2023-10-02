@@ -82,7 +82,7 @@ WHERE forma_pago = 'Debito';
 b) Obtener el promedio de todas las boletas realizadas por el cliente José Mora.
 
 ```sql
-SELECT c.nombre_cliente, COUNT(*) AS Promedio
+SELECT c.nombre_cliente, ROUND(AVG(total),2) AS promedio_total
 FROM boletas b
 JOIN clientes c ON b.rut_cli = c.rut_cli
 WHERE c.nombre_cliente = 'José Mora';
